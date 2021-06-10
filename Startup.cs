@@ -41,6 +41,7 @@ namespace WebApi
                 .AllowAnyOrigin()
                 .AllowAnyMethod()
                 .AllowAnyHeader());
+                // CORS
 
             app.UseAuthentication();
             app.UseAuthorization();

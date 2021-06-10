@@ -36,5 +36,13 @@ namespace WebApi.Controllers
             var users = await _userService.GetAll();
             return Ok(users);
         }
+
+        // GET /users/test
+        [HttpGet("test", Name = nameof(Test))]
+        public async Task<IActionResult> Test()
+        {
+            string response = "antwoord van test";
+            return Ok(response);
+        }
     }
 }
